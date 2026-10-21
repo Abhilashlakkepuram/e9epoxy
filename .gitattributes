@@ -1,0 +1,22 @@
+# Normalize line endings: LF in the repository, LF in the working tree.
+# Keeps `git status` quiet regardless of each clone's core.autocrlf setting.
+* text=auto eol=lf
+
+# Windows batch files need CRLF to be safe for cmd.exe.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets: never touch line endings, never try to diff as text.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.mp4 binary
+*.webm binary
